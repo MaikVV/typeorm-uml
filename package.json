@@ -35,6 +35,7 @@
 	},
 	"types": "lib/index.d.ts",
 	"scripts": {
+		"postinstall": "npm run build",
 		"prebuild": "rimraf lib",
 		"build": "tsc -b --force",
 		"watch": "tsc --watch",
